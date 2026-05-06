@@ -3,13 +3,12 @@
 \resumeSubHeadingListStart
 
     \resumeProjectHeading
-    {\textbf{ShuttleVision} $|$ \emph{Python, OpenCV, PyTorch, YOLOv5, Roboflow, NumPy, CUDA}}    {}
+    {\textbf{ShuttleVision} $|$ \emph{Python, OpenCV, PyTorch, YOLOv8, Roboflow, NumPy, CUDA, AWS}}    {}
     \resumeItemListStart
 
-    % this line needs improvement
-        \resumeItem{Built player and shuttlecock detection with court line mapping using \textbf{Roboflow} data, achieving \textbf{95\% accuracy} }
-        \resumeItem{Computed shuttlecock speed, angle, and height using linear algebra on frame data, enabling performance analysis}
-        \resumeItem{Accelerated computation to \textbf{0.2s per 1080p frame} with \textbf{NumPy vectorization}, \textbf{multithreading}, and \textbf{CUDA}}
+        \resumeItem{Trained \textbf{YOLOv8} to detect players, shuttlecocks, and court keypoints from videos, targeting \textbf{mAP $>$ 0.80} per class}
+  \resumeItem{Mapped pixel to real-world court coordinates via \textbf{OpenCV homography}, computing shot speed and trajectory angle}
+  \resumeItem{Achieved \textbf{0.2s/frame} inference via \textbf{CUDA} acceleration, deployed on \textbf{AWS EC2} g4dn.xlarge}
 
     \resumeItemListEnd
 
@@ -17,13 +16,28 @@
     {\textbf{ShopSmart} $|$ \emph{React Native, Python, Selenium, Beautiful Soup}}{{\href{https://www.figma.com/design/x6SbpCf6Gtpr1APJnDKFtF/CSC-Shopsmart-Mobile-Application?node-id=0-1&p=f}{Figma}}\space\space\space\space{\href{https://github.com/hannahl123/shopsmart}{Github}}}
     \resumeItemListStart
 
-    % this line needs improvement
-        \resumeItem{Led development of a \textbf{cross-platform shopping app} that scrapes retailer flyers and suggests optimized shopping routes by \textbf{cost, time, or balance}}
+        \resumeItem{Led development of a cross-platform shopping app that scrapes discounts and suggests optimized shopping routes}
 
         
-        \resumeItem {Built a web scraper using Selenium to process flyer data under \textbf{1 second/page}, ensuring up-to-date deals}
+        \resumeItem {Built a web scraper using \textbf{Selenium} to process flyer data under \textbf{1 second/page}, ensuring up-to-date deals}
         \resumeItem{Normalized and stored product data weekly, powering accurate route optimization and deal comparison for users}
     \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{VM Text Editor} $|$ \emph{C++, OOP, Design Pattern, FSM Compiler, Context-Free Scanner}}{
+    {\href{https://github.com/AndiJingzhiTse/vm}{Github}}}
+    \resumeItemListStart
+        \resumeItem{Developed a \hyperlink{https://www.vim.org/}{Vim}-inspired text editor adhering \textbf{MVC} and Command Pattern, ensuring simple command extensibility}
+        \resumeItem{Built an $O(n)$ context-free lexical scanner, providing \textbf{instant} syntax highlighting, bracket matching, and indentation}
+    \resumeItemListEnd
+    
+    \resumeProjectHeading
+    {\textbf{Lacs Compiler} $|$ \emph{Scala, MIPS, AST, Lexical Scanner, Garbage Collector, Test-Driven Development}}{}
+    \resumeItemListStart
+        \resumeItem{Built a compiler with lexical scanning, parsing, type checking to compile high-level program into executable MIPS}
+        \resumeItem{Engineered a garbage collector using \textbf{Cheney’s algorithm} to eliminate heap fragmentation with 100\% correctness}
+    \resumeItemListEnd    
+
 
     \resumeProjectHeading
     {\textbf{Grocery Dash} $|$ \emph{Unity, C\#}}{{\href{https://andijingzhitse.itch.io/grocerydash}{Itch.io}}\space\space\space\space
@@ -31,21 +45,24 @@
     \resumeItemListStart
         \resumeItem{Developed a 2D game with player-object interactions, including proximity-based highlighting and inventory tracking}
         \resumeItem{Built an event-driven order system handling 1M+ delivery combos, item matching, and 4 unlockable levels }
-        \resumeItem{Designed a penalty system that identifies user mistakes (e.g., mismatching items), scaling difficulty across levels}
+        %\resumeItem{Designed a penalty system that identifies user mistakes (e.g., mismatching items), scaling difficulty across levels}
     \resumeItemListEnd
-    
+
+    \begin{comment}
     \resumeProjectHeading
     {\textbf{EcoSim} $|$ \emph{JavaScript (TS, HTML, CSS), OOP}}{\href{https://github.com/candle08/EcoSim}{Github}}
     \resumeItemListStart
         \resumeItem{Developed a food chain simulation \textbf{web game backend} with \textbf{OOP}, simplifying the game development}
         \resumeItem{Created random disaster simulation modules to introduce unpredictability and enhance the \textbf{gameplay experience}}
     \resumeItemListEnd
+    \end{comment}
 
+\begin{comment}
     \resumeProjectHeading
     {\textbf{Boggle Word Game} $|$ \emph{Java, OOP, GUI, DFS, Agile}}{\href{https://github.com/AndiJingzhiTse/Java-Boggle-Game}{Github}}
     \resumeItemListStart
         \resumeItem{Directed \textbf{Agile} team development by breaking the project into modular components and assigning tasks to peers}
         \resumeItem{Optimized \textbf{DFS} word-search algorithm by \textbf{170\%} via pruning, enabling full-dictionary lookups \textbf{under 1s}}
     \resumeItemListEnd
-
+\end{comment}
 \resumeSubHeadingListEnd
